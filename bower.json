@@ -1,0 +1,24 @@
+{
+  "name": "node-express-rest",
+  "description": "NodeJS ExpressJS RESTful API server example.",
+  "main": "",
+  "authors": [
+    "Muxi Qi"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "public/assets/libs",
+    "public/test",
+    "public/tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-bootstrap": "^2.5.0",
+    "bootstrap": "^3.3.7",
+    "angular-route": "^1.6.4"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "node-express-rest",
+  "version": "0.0.1",
+  "description": "NodeJS ExpressJS RESTful API server example.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "postinstall": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/qimuxi1990/node-express-rest.git"
+  },
+  "author": "Muxi Qi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}

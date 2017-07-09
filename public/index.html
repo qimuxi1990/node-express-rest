@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="restApp">
+    <head>
+        <!--META-->
+        <meta charset="utf-8">
+        <title>Node Express RESTful Example</title>
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Node Express RESTful Example">
+        <meta name="author" content="Muxi Qi">
+        <!--CSS-->
+        <link rel="stylesheet" href="assets/css/style.min.css">
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+        <!--Comment out theme for a flat design
+        <link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap-theme.min.css">
+        -->
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="pageheader">
+                <h1>Node Express RESTful Example</h1>
+                <h4><small>An app implemented with NodeJS+ExpressJS RESTful on Back-End, as well as Bootstrap+Angular on Front-End.</small></h4>
+            </div>
+        </div>
+        <div ng-view></div>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-11 col-xs-offset-1 col-sm-12 col-sm-offset-0">
+                        <h4>Links</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#!api">API</a></li>
+                            <li><a href="#!test">Test it</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Scripts-->
+        <script type="text/javascript" src="assets/libs/angular/angular.min.js"></script>
+        <script type="text/javascript" src="assets/libs/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+        <script type="text/javascript" src="assets/libs/angular-route/angular-route.min.js"></script>
+        <!--App level Scripts-->
+        <script type="text/javascript" src="app/app.routes.js"></script>
+        <script type="text/javascript" src="app/app.module.js"></script>
+        <!--Component level Scripts: check references and load them dynamically in the future-->
+        <script type="text/javascript" src="app/components/test/testController.js"></script>
+        <script type="text/javascript" src="app/components/api/apiController.js"></script>
+    </body>
+</html>

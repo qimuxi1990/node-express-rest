@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="row">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Test</li>
+        </ol>
+    </div>
+</div>
+<div class="container-fluid" ng-controller="testController as test">
+    <div class="row">
+        <div class="col-sm-4 col-xs-12" name="selector">
+            <div class="col-sm-12 btn-group btn-group-justified">
+                <label class="btn btn-info" ng-model="test.target.path" uib-btn-radio="'collection'" ng-change="test.sendRequest()">COLLECTION</label>
+                <label class="btn btn-info" ng-model="test.target.path" uib-btn-radio="'object'" ng-change="test.sendRequest()">OBJECT</label>
+            </div>
+            <div class="col-sm-12 btn-group btn-group-justified">
+                <label class="btn btn-primary" ng-model="test.target.method" uib-btn-radio="'GET'" ng-change="test.sendRequest()">GET</label>
+                <label class="btn btn-primary" ng-model="test.target.method" uib-btn-radio="'POST'" ng-change="test.sendRequest()">POS<span class="hidden-xs">T</span></label>
+                <label class="btn btn-primary" ng-model="test.target.method" uib-btn-radio="'PUT'" ng-change="test.sendRequest()">PUT</label>
+                <label class="btn btn-primary" ng-model="test.target.method" uib-btn-radio="'PATCH'" ng-change="test.sendRequest()">PAT<span class="hidden-xs">CH</span></label>
+                <label class="btn btn-primary" ng-model="test.target.method" uib-btn-radio="'DELETE'" ng-change="test.sendRequest()">DEL<span class="hidden-xs">ETE</span></label>
+            </div>
+        </div>
+        <div class="col-sm-8 col-xs-12 panel-group" name="display">
+            <div class="panel panel-warning" name="request">
+                <div class="panel-heading">Target Request</div>
+                <div class="panel-body">
+                    <span>{{test.target.method}} /{{test.target.path==='collection'?'objects':'objects/:objectId'}}</span>
+                </div>
+            </div>
+            <div class="panel panel-success" name="response">
+                <div class="panel-heading">Response</div>
+                <div class="panel-body">
+                    <span>{{test.response}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
